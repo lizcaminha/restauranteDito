@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Produtos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>Produtos</h1>
+<a th:href="@{/produtos}">Produto</a>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço (R$)</th>
+        <th>Ações</th>
+    </tr>
+    <!--<tr th:each="p : ${produtos}">
+        <td th:text="${p.id}"></td>
+        <td th:text="${p.nome}"></td>
+        <td th:text="${p.preco}"></td>
+        <td>
+            <a th:href="@{/produtos/editar/{id}(id=${p.id}}">Editar</a>
+            <a th:href="@{/produtos/excluir/{id}(id=${p.id}}">Excluir</a>
+        </td>
+    </tr> -->
+    <tr>
+        <td>1</td>
+        <td>Cenoura</td>
+        <td>10,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Tomate</td>
+        <td>15,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Couve</td>
+        <td>20,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Provolone</td>
+        <td>5,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Avelã</td>
+        <td>10,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Açúcar</td>
+        <td>10,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Sal</td>
+        <td>15,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Carne</td>
+        <td>50,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Pistache</td>
+        <td>5,0</td>
+        <td>Comprar</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Morango</td>
+        <td>10,0</td>
+        <td>Comprar</td>
+    </tr>
+</table>
+</body>
+</html>
